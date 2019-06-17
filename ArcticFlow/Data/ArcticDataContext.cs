@@ -15,7 +15,6 @@ namespace ArcticFlow.Data
         public DbSet<Arctic> Arctics { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<New> News { get; set; }
-        public DbSet<RedeSocial> RedeSociais { get; set; }
-        public object Arctic { get; internal set; }
+        public DbSet<RedeSocial> RedesSociais { get; set; }
     }
 }

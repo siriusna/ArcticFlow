@@ -20,6 +20,9 @@ namespace ArcticFlow.Models.Entities
         [Display(Description = "Telegram")]
         public string Telegram { get; set; }
 
+        [Display(Description = "Instagram")]
+        public string Instagram { get; set; }
+
         [Display(Description = "Twitter")]
         public string Twitter { get; set; }
 

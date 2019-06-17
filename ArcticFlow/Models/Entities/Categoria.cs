@@ -13,7 +13,7 @@ namespace ArcticFlow.Models.Entities
 
         public string Descrição { get; set; }
 
-        public string Iamgem { get; set; }
+        public string Imagem { get; set; }
 
     }
 }

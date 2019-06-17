@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,9 +9,12 @@ namespace ArcticFlow.Models.Entities
 {
     public class Arctic
     {
-        public int Id { get; set; }
-        public int RedeSocialID { get; set; }
-        public int CategoriaID { get; set; }
+        public Arctic()
+        {
+            Categorias = new Collection<Categoria>();
+        }
+
+        public int ArcticID { get; set; }
 
         [Display(Description = "Nome do usuário")]
         public string Nome { get; set; }
@@ -42,15 +46,13 @@ namespace ArcticFlow.Models.Entities
 
         [Display(Description = "Descrição")]
         public string Descricao { get; set; }
-        
 
 
+        public ICollection<Categoria> Categorias { get; set; }
 
 
         [Display(Description = "Rede Social")]
-        public RedeSocial RedeSocial { get; set; }        
-        [Display(Description = "Categoria")]
-        public Categoria Categoria { get; set; }
+        public RedeSocial RedeSocial { get; set; }      
 
     }
 }
