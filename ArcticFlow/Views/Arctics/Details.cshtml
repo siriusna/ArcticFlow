@@ -1,0 +1,72 @@
+﻿@model ArcticFlow.Models.Entities.Arctic
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Arctic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Empresa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FotoPerfil)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FotoPerfil)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCriacao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataCriacao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataNascimento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ArcticID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

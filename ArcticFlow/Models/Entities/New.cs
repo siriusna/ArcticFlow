@@ -9,6 +9,7 @@ namespace ArcticFlow.Models.Entities
     public class New
     {
         public int Id { get; set; }
+        public int RedeSocialID { get; set; }
 
         [Required(ErrorMessage ="Titulo é obrigaório")]
         public string Titulo { get; set; }
@@ -30,6 +31,7 @@ namespace ArcticFlow.Models.Entities
         public DateTime Data { get; set; }
 
         public RedeSocial RedeSocial { get; set; }
-        public Categoria Categoria { get; set; }
+
+        public virtual ICollection<Categoria> Categorias { get; set; }
     }
 }
